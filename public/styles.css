@@ -1,0 +1,120 @@
+#hero_image {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#hero_card {
+  background-color: black;
+  background: rgba(159, 159, 159, 0.5);
+  height: 500px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  padding: 24px;
+  margin: 40px;
+  bottom: 0;
+  left: 0;
+}
+
+#hero_card_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  text-shadow: 4px 4px 4px rgb(100, 0, 0);
+}
+
+#hero_card_sub_title {
+  font-size: 30px;
+  color: white;
+  font-weight: 100;
+  /* font-style: italic; */
+  text-shadow: 4px 4px 4px rgb(0, 0, 0);
+}
+
+#hero_card_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  border-radius: 0%;
+  background-color: rgb(100, 0, 0);
+  color: rgb(255, 255, 255);
+  border-color: black;
+  text-shadow: 4px 4px 4px rgb(0, 0, 0);
+  border-color: white;
+}
+
+#hero_card_button_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 4px 4px 4px rgb(0, 0, 0);
+}
+
+#card_section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#card {
+  max-height: 50%;
+  max-width: 100%;
+  background: rgba(96, 96, 96, 0.527);
+  margin: 10px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.411);
+}
+
+#card_title {
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  text-shadow: 4px 4px 4px rgb(100, 0, 0);
+}
+
+#card_description {
+  color: rgb(255, 255, 255);
+  text-shadow: 4px 4px 4px rgb(100, 0, 0);
+}
+
+#card_button_wrapper {
+  float: right;
+  display: flex;
+}
+
+#card_button {
+  color: aliceblue;
+  border-radius: 0%;
+  background-color: rgb(100, 0, 0);
+  color: rgb(255, 255, 255);
+  border-color: white;
+  text-shadow: 4px 4px 4px rgb(0, 0, 0);
+}
+
+#card_image {
+  max-height: 500px;
+  max-width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer_image {
+  position: absolute;
+  display: flex;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 1318px) {
+  #hero_card {
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 1026px) {
+  #hero_card {
+    display: none;
+  }
+}
