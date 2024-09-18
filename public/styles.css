@@ -101,6 +101,42 @@
   justify-content: center;
 }
 
+#boss_card {
+  background-image: url("./images/zuesbg.jpeg");
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  border: 10px solid rgb(255, 246, 224);
+  box-shadow: 20px 20px 20px rgb(0, 0, 0);
+}
+
+#boss_card_title {
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 200px;
+  text-shadow: 4px 4px 4px rgb(0, 0, 0);
+}
+
+#boss_card_text {
+  color: white;
+  font-size: 40px;
+  font-weight: 300;
+  text-shadow: 4px 4px 4px rgb(0, 0, 0);
+}
+
+#boss_card_text_container {
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: rgba(0, 0, 0, 0.176);
+}
+
 #footer_image {
   position: absolute;
   display: flex;
