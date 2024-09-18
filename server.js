@@ -9,12 +9,14 @@ const card_info = [
   {
     card_bundle: [
       {
+        id: 0,
         title: "ZUES ⚡",
         description:
           "King of Olympus and the ruler of the Greek Pantheon, as well as the God of the Sky, Thunder, Lightning, Storms, Hospitality and Heavens.",
         imgURL: "./images/AkinZeus.webp",
       },
       {
+        id: 1,
         title: "POSEIDON 💧",
         description:
           "The Olympian God of the Seas, Rivers, Water, Storms, Tempests, Winds, Hurricanes, Rain, Floods, Drought, Earthquakes and Horses.",
@@ -25,12 +27,14 @@ const card_info = [
   {
     card_bundle: [
       {
+        id: 2,
         title: "HADES ☠️",
         description:
           "the Olympian God of the Dead and the Ruler of the Underworld. Eldest son of the mighty titan Cronos and the goddess Rhea.",
         imgURL: "./images/Hades-Render.webp",
       },
       {
+        id: 3,
         title: "CRONOS ⌛",
         description:
           "The leader the mighty Titans who were born to Gaia and Ouranos. He fathered the first of the Olympians with his wife Rhea.",
@@ -38,16 +42,17 @@ const card_info = [
       },
     ],
   },
-
   {
     card_bundle: [
       {
+        id: 4,
         title: "HERCULES 💪",
         description:
           "The Demigod son of Zeus and a mortal woman named Alcmene, He is known for being the god of God of Strength.",
         imgURL: "./images/AkinHercules.webp",
       },
       {
+        id: 5,
         title: "HERMES 👟",
         description:
           "the Olympian God of Travelers, Messengers, Thieves, Commerce, Sports, Athletics, and Speed.",
@@ -61,7 +66,7 @@ app.get("/", (req, res) => {
   res.render(__dirname + "/index.html");
 });
 
-app.get("/GOW/data", (req, res) => {
+app.get("/boss/data", (req, res) => {
   res.json({ data: card_info });
 });
 

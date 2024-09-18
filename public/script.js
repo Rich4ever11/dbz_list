@@ -1,4 +1,6 @@
 function handleCardRender(card_info) {
+  const { title, description, imgURL } = card_info;
+
   // Creating the outer layer of the card
   let card_container = document.createElement("div");
   card_section.appendChild(card_container);
@@ -10,12 +12,12 @@ function handleCardRender(card_info) {
   // Creating the card contents
   let card_title = document.createElement("h1");
   card_title.id = "card_title";
-  card_title.innerText = card_info.title;
+  card_title.innerText = title;
   card_article.appendChild(card_title);
 
   let card_description = document.createElement("p");
   card_description.id = "card_description";
-  card_description.innerHTML = card_info.description;
+  card_description.innerHTML = description;
   card_article.appendChild(card_description);
 
   let card_button_wrapper = document.createElement("div");
@@ -29,14 +31,14 @@ function handleCardRender(card_info) {
 
   let card_image = document.createElement("img");
   card_image.id = "card_image";
-  card_image.src = card_info.imgURL;
+  card_image.src = imgURL;
   card_article.appendChild(card_image);
 
   return card_container;
 }
 
 async function handleCardCreation() {
-  const result = await fetch("/GOW/data");
+  const result = await fetch("/boss/data");
   const json_data = await result.json();
   card_info = json_data.data;
   card_info.map((card_bundle) => {
