@@ -66,6 +66,10 @@ app.get("/", (req, res) => {
   res.render(__dirname + "/index.html");
 });
 
+// app.get("/boss/", (req, res) => {
+//   res.render()
+// })
+
 app.get("/boss/data", (req, res) => {
   res.json({ data: card_info });
 });
