@@ -90,8 +90,22 @@ app.get("/boss/data/:id", (req, res) => {
 });
 
 app.get("/boss/:id", (req, res) => {
-  res.sendFile("boss.html", { root: __dirname + "/public" });
+  try {
+    const boss_id = parseInt(req.params.id);
+    if (boss_id < 0 || boss_id > card_info.length * 2) {
+      res.sendFile("/404/index.html", { root: __dirname + "/public" });
+    }
+    res.sendFile("boss.html", { root: __dirname + "/public" });
+  } catch {
+    res.sendFile("/404/index.html", { root: __dirname + "/public" });
+  }
+
   // res.render("/boss.html", { name: "example" });
+});
+
+//The 404 Route (keep last)
+app.get("*", function (req, res) {
+  res.sendFile("/404/index.html", { root: __dirname + "/public" });
 });
 
 app.listen(port);
