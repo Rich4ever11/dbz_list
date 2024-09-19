@@ -1,5 +1,5 @@
 function handleCardRender(card_info) {
-  const { title, description, imgURL } = card_info;
+  const { id, title, description, imgURL } = card_info;
 
   // Creating the outer layer of the card
   let card_container = document.createElement("div");
@@ -27,6 +27,9 @@ function handleCardRender(card_info) {
   let card_button = document.createElement("button");
   card_button.id = "card_button";
   card_button.innerHTML = "View Info";
+  card_button.onclick = function () {
+    location.href = `/boss/${id}`;
+  };
   card_button_wrapper.appendChild(card_button);
 
   let card_image = document.createElement("img");

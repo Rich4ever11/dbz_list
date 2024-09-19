@@ -1,0 +1,22 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#container {
+  min-width: 100%;
+  min-height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+h1 {
+  size: 200px;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+}
