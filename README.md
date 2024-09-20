@@ -28,13 +28,9 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-\*\*Note: please be sure to
-
 Here's a walkthrough of implemented required features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-<!-- Replace this with whatever GIF tool you used! -->
+## VIDEO LINK: https://drive.google.com/file/d/1R-PlJhsQEztrA383f7kbX2rxjocfTYcJ/view?usp=sharing
 
 GIF created with ... Add GIF tool here
 
