@@ -14,17 +14,17 @@ const card_info = [
     card_bundle: [
       {
         id: 0,
-        title: "ZUES ⚡",
+        title: "GOKU/孫悟空",
         description:
-          "King of Olympus and the ruler of the Greek Pantheon, as well as the God of the Sky, Thunder, Lightning, Storms, Hospitality and Heavens.",
-        imgURL: "/images/AkinZeus.webp",
+          "A Saiyan raised on Earth and the main protagonist of the Dragon Ball series",
+        imgURL: "/images/goku-png-32668.png",
       },
       {
         id: 1,
-        title: "POSEIDON 💧",
+        title: "Vegeta/ベジータ",
         description:
-          "The Olympian God of the Seas, Rivers, Water, Storms, Tempests, Winds, Hurricanes, Rain, Floods, Drought, Earthquakes and Horses.",
-        imgURL: "/images/poseidon.png",
+          "The prince of the fallen Saiyan race and one of the main characters of the Dragon Ball series",
+        imgURL: "/images/Vegeta.webp",
       },
     ],
   },
@@ -32,17 +32,17 @@ const card_info = [
     card_bundle: [
       {
         id: 2,
-        title: "HADES ☠️",
+        title: "Frieza/フリーザ",
         description:
-          "the Olympian God of the Dead and the Ruler of the Underworld. Eldest son of the mighty titan Cronos and the goddess Rhea.",
-        imgURL: "/images/Hades-Render.webp",
+          "A major antagonist in the Dragon Ball Z and responsible for the Genocide of the Saiyan race",
+        imgURL: "/images/frieza.webp",
       },
       {
         id: 3,
-        title: "CRONOS ⌛",
+        title: "Cell/セル",
         description:
-          "The leader the mighty Titans who were born to Gaia and Ouranos. He fathered the first of the Olympians with his wife Rhea.",
-        imgURL: "/images/Cronos_Render.webp",
+          "A major antagonist in the Dragon Ball Z and The ultimate creation of Dr. Gero",
+        imgURL: "/images/cell.png",
       },
     ],
   },
@@ -50,17 +50,17 @@ const card_info = [
     card_bundle: [
       {
         id: 4,
-        title: "HERCULES 💪",
+        title: "KID BUU/(魔人ブウ(純粋)",
         description:
-          "The Demigod son of Zeus and a mortal woman named Alcmene, He is known for being the god of God of Strength.",
-        imgURL: "/images/AkinHercules.webp",
+          "A major antagonist in the Dragon Ball Z and the original, pure form of Majin Buu",
+        imgURL: "/images/buu.png",
       },
       {
         id: 5,
-        title: "HERMES 👟",
+        title: "GOKU BLACK/ゴクウブラック",
         description:
-          "the Olympian God of Travelers, Messengers, Thieves, Commerce, Sports, Athletics, and Speed.",
-        imgURL: "/images/AkinHermes.webp",
+          "A major antagonist in the Dragon Ball Super and an alternate incarnation of Zamasu and a former North Kai and Supreme Kai apprentice ",
+        imgURL: "/images/blackgoku.png",
       },
     ],
   },
