@@ -32,12 +32,15 @@ Here's a walkthrough of implemented required features:
 
 ## VIDEO LINK: https://drive.google.com/file/d/1R-PlJhsQEztrA383f7kbX2rxjocfTYcJ/view?usp=sharing
 
-GIF created with ... Add GIF tool here
+![soft_gif1](https://github.com/user-attachments/assets/3a7b56d2-b8b8-4781-ad6c-000e545e2f25)
 
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+![soft_gif22](https://github.com/user-attachments/assets/f6895aa6-a557-449e-96a0-8eb2fe84cd4f)
+
+![soft_gif33](https://github.com/user-attachments/assets/c48be6a6-678b-4bf9-8173-a4ca45455164)
+
+![soft_gif44](https://github.com/user-attachments/assets/b5d96426-f5f1-4b23-aedb-4f77e74e426a)
+
+GIF created with ... ezgif.com
 
 ## Notes
 
