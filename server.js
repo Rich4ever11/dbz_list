@@ -95,14 +95,14 @@ app.get("/boss/data/:id", (req, res) => {
 
 app.get("/boss/:id", (req, res) => {
   const boss_id = parseInt(req.params.id);
-  console.log(boss_id);
   if (boss_id < 0 || boss_id > card_info.length * 2 || isNaN(boss_id)) {
-    res.status(404).sendFile("/NotFound.html", { root: __dirname + "/public" });
+    // res.status(404).sendFile("/NotFound.html", { root: __dirname + "/public" });
+    res.redirect("/not_found");
+  } else {
+    res
+      .status(200)
+      .sendFile("/Character.html", { root: __dirname + "/public" });
   }
-  res.status(200).sendFile("/Character.html", { root: __dirname + "/public" });
-  // }
-  // res.status(404).sendFile("/NotFound.html", { root: __dirname + "/public" });
-  // res.render("/boss.html", { name: "example" });
 });
 
 //The 404 Route (keep last)
