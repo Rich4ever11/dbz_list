@@ -123,8 +123,8 @@
   justify-content: center;
 }
 
-#boss_card {
-  background-image: url("https://images.unsplash.com/photo-1570556319136-3cfc640168a4?q=80&w=2085&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+#character_card {
+  background-image: url("../images/cardbg.avif");
   margin-top: 50px;
   margin-bottom: 50px;
   background-repeat: no-repeat;
@@ -137,7 +137,7 @@
   box-shadow: 20px 20px 20px rgb(0, 0, 0);
 }
 
-#boss_card_title {
+#character_card_title {
   color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
@@ -147,25 +147,38 @@
   font-style: italic;
 }
 
-#boss_card_text {
+#character_card_text {
   color: white;
   font-size: 40px;
   font-weight: 300;
   text-shadow: 4px 4px 4px rgb(0, 0, 0);
 }
 
-#boss_card_text_container {
+#character_card_power_level {
+  color: white;
+  font-size: 40px;
+  font-weight: 300;
+  position: realtive;
+  padding: 1em 0;
+  margin: 0;
+  text-align: center;
+  background-color: rgba(255, 131, 131, 0.263);
+  text-shadow: 4px 4px 4px rgb(0, 0, 0);
+  font-style: italic;
+}
+
+#character_card_text_container {
   padding-left: 40px;
   padding-right: 40px;
   background-color: rgba(0, 0, 0, 0.176);
 }
 
-#boss_card_img {
+#character_card_img {
   max-width: auto;
   width: auto;
 }
 
-#boss_card_img_wrapper {
+#character_card_img_wrapper {
   display: flex;
   justify-content: center;
   align-content: center;

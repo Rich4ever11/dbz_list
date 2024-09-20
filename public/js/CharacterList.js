@@ -28,7 +28,7 @@ function handleCardRender(card_info) {
   card_button.id = "card_button";
   card_button.innerHTML = "View Info";
   card_button.onclick = function () {
-    location.href = `/boss/${id}`;
+    location.href = `/character/${id}`;
   };
   card_button_wrapper.appendChild(card_button);
 
@@ -41,7 +41,7 @@ function handleCardRender(card_info) {
 }
 
 async function handleCardCreation() {
-  const result = await fetch("/boss/data");
+  const result = await fetch("/character/data");
   const json_data = await result.json();
   card_info = json_data.data;
   card_info.map((card_bundle) => {
