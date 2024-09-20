@@ -19,12 +19,29 @@
   left: 0;
 }
 
+#hero_card_two {
+  background-color: black;
+  background: rgba(159, 159, 159, 0.5);
+  height: 500px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  padding: 24px;
+  margin: 40px;
+  top: 0;
+  right: 0;
+}
+
 #hero_card_title {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 80px;
   text-shadow: 4px 4px 4px rgb(100, 0, 0);
+  font-style: italic;
 }
 
 #hero_card_sub_title {
@@ -33,6 +50,7 @@
   font-weight: 100;
   /* font-style: italic; */
   text-shadow: 4px 4px 4px rgb(0, 0, 0);
+  font-style: italic;
 }
 
 #hero_card_button {
@@ -72,6 +90,7 @@
   color: rgb(255, 255, 255);
   font-size: 60px;
   text-shadow: 4px 4px 4px rgb(100, 0, 0);
+  font-style: italic;
 }
 
 #card_description {
@@ -95,7 +114,9 @@
 }
 
 #card_image {
-  max-height: 500px;
+  max-height: 525px;
+  margin-top: 20px;
+  padding-top: 30px;
   max-width: fit-content;
   display: flex;
   align-items: center;
@@ -103,7 +124,7 @@
 }
 
 #boss_card {
-  background-image: url("https://images.unsplash.com/photo-1498590880827-3f79fdcd7fbe?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njd8fHNwYWNlfGVufDB8fDB8fHww");
+  background-image: url("https://images.unsplash.com/photo-1570556319136-3cfc640168a4?q=80&w=2085&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   margin-top: 50px;
   margin-bottom: 50px;
   background-repeat: no-repeat;
@@ -112,7 +133,7 @@
   border-radius: 20px;
   width: 100%;
   height: 100%;
-  border: 10px solid rgb(255, 246, 224);
+  border: 10px solid rgb(0, 0, 0);
   box-shadow: 20px 20px 20px rgb(0, 0, 0);
 }
 
@@ -121,8 +142,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 175px;
+  font-size: 100px;
   text-shadow: 4px 4px 4px rgb(0, 0, 0);
+  font-style: italic;
 }
 
 #boss_card_text {
@@ -136,6 +158,17 @@
   padding-left: 40px;
   padding-right: 40px;
   background-color: rgba(0, 0, 0, 0.176);
+}
+
+#boss_card_img {
+  max-width: auto;
+  width: auto;
+}
+
+#boss_card_img_wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 #footer_image {
@@ -153,5 +186,15 @@
 @media only screen and (max-width: 1026px) {
   #hero_card {
     display: none;
+  }
+
+  #hero_card_two {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #card_image {
+    max-height: 400px;
   }
 }

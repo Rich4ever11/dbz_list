@@ -21,10 +21,10 @@ const card_info = [
       },
       {
         id: 1,
-        title: "Vegeta/ベジータ",
+        title: "VEGETA/ベジータ",
         description:
           "The prince of the fallen Saiyan race and one of the main characters of the Dragon Ball series",
-        imgURL: "/images/Vegeta.webp",
+        imgURL: "/images/vegeta.png",
       },
     ],
   },
@@ -32,14 +32,14 @@ const card_info = [
     card_bundle: [
       {
         id: 2,
-        title: "Frieza/フリーザ",
+        title: "FRIEZA/フリーザ",
         description:
           "A major antagonist in the Dragon Ball Z and responsible for the Genocide of the Saiyan race",
-        imgURL: "/images/frieza.webp",
+        imgURL: "/images/frieza.png",
       },
       {
         id: 3,
-        title: "Cell/セル",
+        title: "CELL/セル",
         description:
           "A major antagonist in the Dragon Ball Z and The ultimate creation of Dr. Gero",
         imgURL: "/images/cell.png",
@@ -50,14 +50,14 @@ const card_info = [
     card_bundle: [
       {
         id: 4,
-        title: "KID BUU/(魔人ブウ(純粋)",
+        title: "KID BUU/魔人ブウ",
         description:
           "A major antagonist in the Dragon Ball Z and the original, pure form of Majin Buu",
         imgURL: "/images/buu.png",
       },
       {
         id: 5,
-        title: "GOKU BLACK/ゴクウブラック",
+        title: "GOKU BLACK/ブラック",
         description:
           "A major antagonist in the Dragon Ball Super and an alternate incarnation of Zamasu and a former North Kai and Supreme Kai apprentice ",
         imgURL: "/images/blackgoku.png",
