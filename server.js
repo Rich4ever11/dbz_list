@@ -1,9 +1,13 @@
 const express = require("express");
 const path = require("path");
+const ejs = require("ejs");
+
 const app = express();
 const port = process.env.PORT || 8080;
 
-app.use(express.static("public"));
+app.use(express.static(__dirname + "/public"));
+// app.set("public", __dirname + "/public");
+// app.engine("html", ejs.renderFile);
 
 const card_info = [
   {
@@ -77,7 +81,7 @@ const getCardById = (id) => {
 };
 
 app.get("/", (req, res) => {
-  res.render("index.html", { root: __dirname + "/public" });
+  res.sendFile("/CharacterList.html", { root: __dirname + "/public" });
 });
 
 app.get("/boss/data", (req, res) => {
@@ -90,22 +94,20 @@ app.get("/boss/data/:id", (req, res) => {
 });
 
 app.get("/boss/:id", (req, res) => {
-  try {
-    const boss_id = parseInt(req.params.id);
-    if (boss_id < 0 || boss_id > card_info.length * 2) {
-      res.sendFile("/404/index.html", { root: __dirname + "/public" });
-    }
-    res.sendFile("boss.html", { root: __dirname + "/public" });
-  } catch {
-    res.sendFile("/404/index.html", { root: __dirname + "/public" });
+  const boss_id = parseInt(req.params.id);
+  console.log(boss_id);
+  if (boss_id < 0 || boss_id > card_info.length * 2 || isNaN(boss_id)) {
+    res.status(404).sendFile("/NotFound.html", { root: __dirname + "/public" });
   }
-
+  res.status(200).sendFile("/Character.html", { root: __dirname + "/public" });
+  // }
+  // res.status(404).sendFile("/NotFound.html", { root: __dirname + "/public" });
   // res.render("/boss.html", { name: "example" });
 });
 
 //The 404 Route (keep last)
 app.get("*", function (req, res) {
-  res.sendFile("/404/index.html", { root: __dirname + "/public" });
+  res.status(404).sendFile("/NotFound.html", { root: __dirname + "/public" });
 });
 
 app.listen(port);
