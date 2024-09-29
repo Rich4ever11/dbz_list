@@ -30,7 +30,7 @@ The following **additional** features are implemented:
 
 - [x] List anything else that you added to improve the site's functionality!
 
-## VIDEO LINK: https://drive.google.com/file/d/1R-PlJhsQEztrA383f7kbX2rxjocfTYcJ/view?usp=sharing
+## VIDEO LINK: [https://drive.google.com/file/d/1R-PlJhsQEztrA383f7kbX2rxjocfTYcJ/view?usp=sharing](https://drive.google.com/file/d/159vNN7aDHHpifx29rWWKrsm68yIrGoZ2/view?usp=sharing)
 
 ![soft_gif1](https://github.com/user-attachments/assets/3a7b56d2-b8b8-4781-ad6c-000e545e2f25)
 
