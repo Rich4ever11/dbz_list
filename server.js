@@ -2,7 +2,6 @@ import express from "express";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 import { dragonBallCharacters } from "./public/data/characterData.js";
-import { getDragonBallCharacterByID } from "./public/util/card.js";
 import DragonBallController from "./controllers.js";
 import "./dotenv.js";
 

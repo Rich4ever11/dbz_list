@@ -1,3 +1,16 @@
+const handleCharacterListFetch = async () => {
+  try {
+    const result = await fetch("/character/data");
+    const json_data = await result.json();
+    console.log("[🟠] We have assembled all seven dragon balls");
+    return json_data.data;
+  } catch (error) {
+    console.log("[-] Failed to assemble all seven dragon balls", error);
+  }
+};
+
+const dragonBallCharacters = handleCharacterListFetch();
+
 function handleCardRender(card_info) {
   const { id, name, description, imgurl } = card_info;
 
@@ -40,12 +53,15 @@ function handleCardRender(card_info) {
   return card_container;
 }
 
-async function handleCardCreation() {
-  const result = await fetch("/character/data");
-  const json_data = await result.json();
-  const dragonBallCharacters = json_data.data;
-  console.log(json_data);
-  dragonBallCharacters.map((dragonBallCharacter) => {
+async function handleCardCreation(searchValue = "") {
+  const dragonBallCharacterData = await dragonBallCharacters;
+  const filteredDragonBallCharacters = dragonBallCharacterData.filter(
+    (dragonBallCharacter) =>
+      dragonBallCharacter.name.includes(searchValue.toUpperCase())
+  );
+  console.log(filteredDragonBallCharacters);
+  document.getElementById("main_card_body").innerHTML = "";
+  filteredDragonBallCharacters.map((dragonBallCharacter) => {
     // const card_one = card_bundle.card_bundle[0];
     // const card_two = card_bundle.card_bundle[1];
 
@@ -65,3 +81,12 @@ async function handleCardCreation() {
 }
 
 handleCardCreation();
+
+const handleCardSearch = (event) => {
+  handleCardCreation(event.target.value);
+};
+
+const search = document.getElementById("character_search");
+
+search.addEventListener("input", handleCardSearch);
+search.addEventListener("propertychange", handleCardSearch);
