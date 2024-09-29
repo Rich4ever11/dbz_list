@@ -5,6 +5,7 @@ Submitted by: Richard Aja
 About this web app: This webpage is meant to list out the various characters present in the Dragon Ball universe 
 
 Front End Technology: Vanilla JS, HTML and CSS. 
+
 Back End Technology: Postgres SQL, Expressjs
 
 Time spent: 7 hours
