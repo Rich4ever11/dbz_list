@@ -1,5 +1,5 @@
 function handleCardRender(card_info) {
-  const { id, title, description, imgURL } = card_info;
+  const { id, name, description, imgurl } = card_info;
 
   // Creating the outer layer of the card
   let card_container = document.createElement("div");
@@ -12,7 +12,7 @@ function handleCardRender(card_info) {
   // Creating the card contents
   let card_title = document.createElement("h1");
   card_title.id = "card_title";
-  card_title.innerText = title;
+  card_title.innerText = name;
   card_article.appendChild(card_title);
 
   let card_description = document.createElement("p");
@@ -34,7 +34,7 @@ function handleCardRender(card_info) {
 
   let card_image = document.createElement("img");
   card_image.id = "card_image";
-  card_image.src = imgURL;
+  card_image.src = imgurl;
   card_article.appendChild(card_image);
 
   return card_container;
@@ -43,10 +43,11 @@ function handleCardRender(card_info) {
 async function handleCardCreation() {
   const result = await fetch("/character/data");
   const json_data = await result.json();
-  card_info = json_data.data;
-  card_info.map((card_bundle) => {
-    const card_one = card_bundle.card_bundle[0];
-    const card_two = card_bundle.card_bundle[1];
+  const dragonBallCharacters = json_data.data;
+  console.log(json_data);
+  dragonBallCharacters.map((dragonBallCharacter) => {
+    // const card_one = card_bundle.card_bundle[0];
+    // const card_two = card_bundle.card_bundle[1];
 
     let card_section = document.createElement("div");
     card_section.id = "card_section";
@@ -56,8 +57,8 @@ async function handleCardCreation() {
     card_section_grid.className = "grid";
     card_section.appendChild(card_section_grid);
 
-    card_section_grid.appendChild(handleCardRender(card_one));
-    card_section_grid.appendChild(handleCardRender(card_two));
+    card_section_grid.appendChild(handleCardRender(dragonBallCharacter));
+    // card_section_grid.appendChild(handleCardRender(card_two));
 
     document.getElementById("main_card_body").appendChild(card_section);
   });

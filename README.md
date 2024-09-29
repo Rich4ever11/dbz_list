@@ -26,22 +26,17 @@ The following **additional** features are implemented:
 
 - [x] List anything else that you added to improve the site's functionality!
 
-## Video Walkthrough
+## VIDEO LINK: https://drive.google.com/file/d/1R-PlJhsQEztrA383f7kbX2rxjocfTYcJ/view?usp=sharing
 
-\*\*Note: please be sure to
+![soft_gif1](https://github.com/user-attachments/assets/3a7b56d2-b8b8-4781-ad6c-000e545e2f25)
 
-Here's a walkthrough of implemented required features:
+![soft_gif22](https://github.com/user-attachments/assets/f6895aa6-a557-449e-96a0-8eb2fe84cd4f)
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![soft_gif33](https://github.com/user-attachments/assets/c48be6a6-678b-4bf9-8173-a4ca45455164)
 
-<!-- Replace this with whatever GIF tool you used! -->
+![soft_gif44](https://github.com/user-attachments/assets/b5d96426-f5f1-4b23-aedb-4f77e74e426a)
 
-GIF created with ... Add GIF tool here
-
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+GIF created with ... ezgif.com
 
 ## Notes
 

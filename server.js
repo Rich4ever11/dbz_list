@@ -1,8 +1,10 @@
 import express from "express";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
-import { card_info } from "./public/data/characterData.js";
-import { getCardById } from "./public/util/card.js";
+import { dragonBallCharacters } from "./public/data/characterData.js";
+import { getDragonBallCharacterByID } from "./public/util/card.js";
+import DragonBallController from "./controllers.js";
+import "./dotenv.js";
 
 const app = express();
 const port = process.env.PORT || 8080;
@@ -16,18 +18,17 @@ app.get("/", (req, res) => {
   res.sendFile("/CharacterList.html", { root: __dirname + "/public" });
 });
 
-app.get("/character/data", (req, res) => {
-  res.json({ data: card_info });
-});
+app.get("/character/data", DragonBallController.getDragonBallCharacters);
 
-app.get("/character/data/:id", (req, res) => {
-  const char_data = getCardById(req.params.id);
-  res.json({ data: char_data });
-});
+app.get("/character/data/:id", DragonBallController.getDragonBallCharacter);
 
 app.get("/character/:id", (req, res) => {
   const boss_id = parseInt(req.params.id);
-  if (boss_id < 0 || boss_id > card_info.length * 2 - 1 || isNaN(boss_id)) {
+  if (
+    boss_id < 0 ||
+    boss_id > dragonBallCharacters.length * 2 - 1 ||
+    isNaN(boss_id)
+  ) {
     res.redirect("/not_found");
   } else {
     res
