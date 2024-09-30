@@ -16,9 +16,9 @@ const createDragonBallTable = async () => {
 
   try {
     const res = await pool.query(createTableQuery);
-    console.log("🎉 dbz character table created successfully");
+    console.log("🎉 dragon ball character table created successfully");
   } catch (err) {
-    console.error("⚠️ dbz character creating gifts table", err);
+    console.error("⚠️ error creating dragon ball character table", err);
   }
 };
 
@@ -39,7 +39,7 @@ const seedDragonBallChractersTable = async () => {
 
     pool.query(insertQuery, values, (err, res) => {
       if (err) {
-        console.error("⚠️ error inserting dbz character", err);
+        console.error("⚠️ error inserting dragon ball character", err);
         return;
       }
 
